@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html manifest="/application.manifest">
+
+<head>
+  <title>Whenevernote</title>
+  <%= stylesheet_link_tag 'formtastic', 'formtastic_changes', 'application' %>
+  <%= javascript_include_tag 'jquery', 'application'  %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	<div id="eventlog"></div>
+	<div id="cacheprogress"></div>
+
+<%= yield %>
+
+</body>
+</html>
