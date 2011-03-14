@@ -2,6 +2,5 @@
 db/*.sqlite3
 log/*.log
 tmp/
-.rake_*
-.rake_tasks\~
+".rake_tasks\~ "
 
