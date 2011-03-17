@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-#11111
+#1111111111
 
 CACHE:
 javascripts/application.js
@@ -9,6 +9,9 @@ javascripts/jquery.tmpl.js
 javascripts/jquery.offline.js
 javascripts/json.js
 stylesheets/application.css
+images/show.png
+images/edit.png
+images/destroy.png
 
 
 

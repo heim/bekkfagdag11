@@ -17,11 +17,20 @@ var cache = {
 	}
 }
 
+var notes = {
+	retrieve: function(){
+		$.retrieveJSON("/notes.json", function(data) {
+			$("#notes").html($("#note_template").tmpl(data));
+		});
+	}
+}
 
 $(function() {
 	cache.showCacheEvents();
 	cache.alertWhenNewCache();
 	
+	
+	notes.retrieve();
 	
 
 
