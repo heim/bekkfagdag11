@@ -1,8 +1,6 @@
 <div class="note">
-    
-		<p><%= note.note_text %></p>
-		
-    <div class="links">
-			<%= link_to "Edit note", edit_note_path(note) %>
-		</div>
+    <p>Opprettet: <%= note.created_at %>, oppdatert <%= note.updated_at %></p>
+		<p><%= note.note_text %> <%= link_to image_tag("edit.png", :border => 0), edit_note_path(note) %> 
+				<%= link_to image_tag("destroy.png", :border => 0), note_path(note), :method => :delete %></p>
+		Use mustache or jquery tmpl
 </div>

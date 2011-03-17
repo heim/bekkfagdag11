@@ -8,6 +8,8 @@ gem 'formtastic'
 
 gem 'sqlite3'
 
+gem 'rack-offline'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

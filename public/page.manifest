@@ -1,14 +1,18 @@
 CACHE MANIFEST
 
-#67891010111111111111111111111111!
+#111111111111111
 
+CACHE:
 javascripts/application.js
 javascripts/jquery.js
 stylesheets/application.css
 stylesheets/formtastic.css
 stylesheets/formtastic_changes.css
+stylesheets/iphone.css
 
+FALLBACK:
 
+/ /offline
 
 NETWORK:
 /

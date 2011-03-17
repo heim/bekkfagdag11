@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html manifest="/application.manifest">
-
+<html manifest="/page.manifest">
 <head>
   <title>Whenevernote</title>
-  <%= stylesheet_link_tag 'formtastic', 'formtastic_changes', 'application' %>
-  <%= javascript_include_tag 'jquery', 'application'  %>
+  <%= stylesheet_link_tag 'application' %>
+  <%= javascript_include_tag 'jquery', 'jquery.tmpl', 'json', 'jquery.offline', 'application' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+	<div id="networkstatus"></div>
 	<div id="eventlog"></div>
 	<div id="cacheprogress"></div>
-
+	<div id="localstoragecontent" class="small"></div>
 <%= yield %>
+
+	
 
 </body>
 </html>

@@ -1,8 +1,22 @@
 <h1>Whenevernote</h1>
+
+<%= form_for Note.new do |f| %>
+	<%= f.label :note, "Note text" %><br />
+	<%= f.text_field :note_text %>
+
+	<%= f.submit "Create note" %>
+<% end %>
+
+
 <div id="notes">
-	<%= render @notes %>
 </div>
 
-<p>
-	<%= link_to 'New Note', new_note_path %>
-</p>
+
+<script type="text/html" id="note_template">
+	<div>
+	 <a href="/notes/${note.id}"><img src="/images/show.png" alt="show" /></a>  ${note.note_text}
+	</div>
+</script>
+
+
+

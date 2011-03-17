@@ -1,6 +1,6 @@
-<%= semantic_form_for @note do |form| %>
-	<%= form.inputs "Note" do %>
-	<%= form.input :note_text,  :input_html => { :class => 'autogrow', :rows => 10, :cols => 20 } %>
- 	<% end %>
-	<%= form.buttons %>
+<%= form_for @note do |f| %>
+	<%= f.label :note, "Note text" %><br />
+	<%= f.text_field :note_text %>
+	
+	<%= f.submit "Create note" %>
 <% end %>
