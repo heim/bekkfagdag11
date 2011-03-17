@@ -69,7 +69,9 @@ $(function() {
 	notes.initializePending();
 	notes.overrideSubmit();
 	notes.sendPending();
-
+	
+  $(window).bind("online", notes.sendPending);
+  
 
 	$("#networkstatus").text(window.navigator.onLine ? "Online" : "Offline");
 	$(window).bind('online offline', function(e) {
