@@ -1,4 +1,3 @@
-<h1>Whenevernote</h1>
 
 <%= form_for Note.new do |f| %>
 	<%= f.label :note, "Note text" %><br />
@@ -9,14 +8,13 @@
 
 
 <div id="notes">
+	<% @notes.each do |note| %>
+	<div>
+	 <a href="/notes/<%= note.id %>"><img src="/images/show.png" alt="show" /></a> <%= note.note_text %>
+	</div>
+	<% end %>
 </div>
 
-
-<script type="text/html" id="note_template">
-	<div>
-	 <a href="/notes/${note.id}"><img src="/images/show.png" alt="show" /></a>  ${note.note_text}
-	</div>
-</script>
 
 
 
