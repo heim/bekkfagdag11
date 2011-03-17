@@ -9,7 +9,9 @@ javascripts/jquery.tmpl.js
 javascripts/jquery.offline.js
 javascripts/json.js
 stylesheets/application.css
-
+images/show.png
+images/edit.png
+images/destroy.png
 
 
 NETWORK:
