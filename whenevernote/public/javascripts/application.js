@@ -55,14 +55,22 @@ var notes = {
 	    localStorage["pendingNotes"] = JSON.stringify(pendingNotes)
 	    $("#note_note_text").val("");
 	    notes.sendPending();
-
+			storage.showLocalStorage();
 	  });
 	}
 }
 
+var storage = {
+	showLocalStorage: function(){
+		for(k in window.localStorage) {
+			$("#localstoragecontent").append(k + "<br />" + window.localStorage[k] + "<br />");      
+		}
+	}
+}
+
+
 $(function() {
-	cache.showCacheEvents();
-	cache.alertWhenNewCache();
+	storage.showLocalStorage();
 	
 	
 	notes.retrieve();
