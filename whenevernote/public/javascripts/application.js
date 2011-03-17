@@ -21,6 +21,15 @@ var cache = {
 $(function() {
 	cache.showCacheEvents();
 	cache.alertWhenNewCache();
+	
+	
+
+
+	$("#networkstatus").text(window.navigator.onLine ? "Online" : "Offline");
+	$(window).bind('online offline', function(e) {
+		$("#networkstatus").text(window.navigator.onLine ? "Online" : "Offline");
+	});
+	
 });
 
 
