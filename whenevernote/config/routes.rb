@@ -3,6 +3,6 @@ Whenevernote::Application.routes.draw do
   root :to => 'notes#index'
   match 'offline' => 'notes#offline'
   
-  #match "/application.manifest" => Rails::Offline
+  match "/application.manifest" => Rails::Offline
   
 end
